@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>l'equilibrio</title>
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header header">
+
+        <a class="header__search-trigger" href="#0"></a>
+        <div class="header__search">
+
+            <form role="search" method="get" class="header__search-form" action="#">
+                <label>
+                    <span class="hide-content">Search for:</span>
+                    <input type="search" class="search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off">
+                </label>
+                <input type="submit" class="search-submit" value="Search">
+            </form>
+
+            <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
+
+        </div>  <!-- end header__search -->
+
+        <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+        <nav class="header__nav-wrap">
+
+            <h2 class="header__nav-heading h6">Navigate to</h2>
+
+            <ul class="header__nav">
+                <li><a href="start.html">Home</a></li>
+                <li><a href="blog.html">Articoli</a></li>
+                <li><a href="contact.html">Contatti</a></li>
+                <li><a href="terms.html">Termini e condizioni</a></li>
+                <li><a href="policy.html">Politica sulla privacy</a></li>
+            </ul> <!-- end header__nav -->
+
+            <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
+
+        </nav> <!-- end header__nav-wrap -->
+
+    </header> <!-- s-header -->
+
+
+    <!-- s-content
+    ================================================== -->
+    <section class="s-content s-content--top-padding s-content--narrow">
+
+        <div class="row">
+            <div class="col-full s-content__main">
+
+                <h4>Lascia un commento</h4>
+                <form class="" action="thanks.html" method="post">
+                    <div class="form-group">
+                        <input type="text" class="full-width" id="contact-name" placeholder="Il nome">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="full-width" id="contact-lastname" placeholder="Cognome">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="full-width" id="contact-email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="full-width" id="contact-phone" placeholder="Il numero di telefono">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="full-width" name="message" id="message" cols="30" rows="10" placeholder="Il testo del commento"></textarea>
+                        <label class="terms-field">
+                            <input type="checkbox" name="terms" value="check" required=""/>
+                            <a href="policy.html" target="_blank">
+                                Ho letto e accetto i termini di questo accordo
+                            </a>
+                        </label>
+                    </div>
+                    <button type="submit" class="submit btn btn--primary btn--large full-width">Inviare</button>
+                </form>
+
+            </div> <!-- s-content__main -->
+        </div> <!-- end row -->
+
+    </section>
+
+
+    <!-- s-footer
+    ================================================== -->
+    <footer class="s-footer">
+
+        <div class="s-footer__bottom">
+            <div class="row">
+
+                <div class="col-six">
+                    <ul class="footer-social">
+                        <li>
+                            <a href="#0"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#0"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-six">
+                    <div class="s-footer__copyright">
+
+                    </div>
+                </div>
+                
+            </div>
+        </div> <!-- end s-footer__bottom -->
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <div class='cookie-banner'>
+        <p>
+            Il sito utilizza i cookie. Essi consentono di riconoscere l'utente e di ottenere informazioni sulle tue esperienze.Continuando la navigazione nel sito, sono d'accordo con l'utilizzo dei cookie il proprietario del sito in conformità con  <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Cookie policy</a>
+        </p>
+        <button class='close-cookie'>&times;</button>
+    </div>
+    <script>
+        window.onload = function () {
+            $('.close-cookie').click(function () {
+                $('.cookie-banner').fadeOut();
+            })
+        }
+    </script>
+    <script>
+        let elems = document.querySelectorAll('.server-name');
+        elems.forEach((elem) => {
+            elem.innerHTML = window.location.hostname
+        })
+    </script>
+
+</body>
+
+</html>
